@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.com/harssh/zen_search_test.svg?token=BVW2o4hfR7sCCYShDufF&branch=master)](https://travis-ci.com/harssh/zen_search_test)
+[![Build Status](https://travis-ci.com/harssh/zen_search.svg?token=BVW2o4hfR7sCCYShDufF&branch=master)](https://travis-ci.com/harssh/zen_search)
  Zen Search
  ================
  Search application based on ruby on rails.
@@ -17,7 +17,7 @@ This application requires:
 - bundler -  `gem install bundler`
 
 ## Installation and Setup
-- Download master ![branch](https://github.com/harssh/zen_search_test.git) and unzip.
+- Download master ![branch](https://github.com/harssh/zen_search.git) and unzip.
 - Browse to extracted folder.
 - Copy database.yml.example to database.yml and please setup MySQL user and database name.
 - Use command `bundle install` to install gems from Gemfile.
@@ -28,7 +28,7 @@ This application requires:
 - Execute server `rails s -e production` and access application at [http://localhost:3000](http://localhost:3000/).
 
 ## Testing
-- Travis Build can be seen at https://travis-ci.com/harssh/zen_search_test.
+- Travis Build can be seen at https://travis-ci.com/harssh/zen_search.
 - Setup db `RAILS_ENV=test rake db:setup`
 - To execute specs on local please use `bundle exec rspec -f d`
 
@@ -36,7 +36,7 @@ This application requires:
 ![Fields](fields.gif)
 
 - Visiting root path will lead you to users page and nav bar has links for organization and tickets.
-- First select box can be used to sect the column you would like to search.
+- First select box can be used to select the column you would like to search.
 - Second drop box will give you predicate/conditions to apply.
 - Please enter required search value in Value text field.
 - To search blank/empty value please use predicate `is blank` and value as `true`

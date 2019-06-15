@@ -38,7 +38,7 @@ group :test do
   gem 'chromedriver-helper'
   gem 'selenium-webdriver'
 end
-gem 'bootstrap', '~> 4.0.0'
+gem "bootstrap", ">= 4.3.1"
 gem 'high_voltage'
 gem 'jquery-rails'
 gem 'mysql2', '~> 0.5.2'
