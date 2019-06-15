@@ -50,4 +50,13 @@ Application is designed using bootstrap 4 and material framwork for UI.
 - Rubycritic has been used to check code.
 ![rubycritic](rubycritic.png)
 
+## Assumption and Model
+- Some assumptions were taken on given data like we did not create any association between the three datasets to keep concentration on search implementation.
+![domainmodel](domainmodel.png)
+- Thre model classes were create User, Organization and Ticket.
+- Assumed that application will be using relational database.
+
+Thank you for your time and effort.
+
+
 
