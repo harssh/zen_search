@@ -12,7 +12,7 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: zen_search_development
+  database: zen_search
   pool: 5
   username: zen_user
   password: password@123
@@ -35,7 +35,7 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: zen_search_production
+  database: zen_search
   pool: 5
   username: zen_user
   password: password@123
