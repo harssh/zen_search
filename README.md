@@ -31,6 +31,7 @@ This application requires:
 - Travis Build can be seen at https://travis-ci.com/harssh/zen_search_test.
 - Setup db `RAILS_ENV=test rake db:setup`
 - To execute specs on local please use `bundle exec rspec -f d`
+![build](travisbuild.gif)
 
 ## Usage
 ![Fields](fields.gif)
