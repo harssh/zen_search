@@ -3,20 +3,20 @@
  Zen Search
  ================
  Search application based on ruby on rails.
-![Demonstration](https://sds.github.io/overcommit/overcommit.gif)
+![Demonstration](Search Demo.gif)
+![Demonstration](Search demo for Blank value.gif)
 When executing a search operation, where data exists, values from any related entities should be included in the results. The user should be able to search on any field and exact value matching is fine (e.g. “mar” won’t return “mary”). The user should also be able to search for empty values, e.g. where description is empty.
 
 
 ## Requirements
--------------
+
 This application requires:
 - Ruby 2.5.1
 - Rails 5.2.3
 - MySQL
 - bundler -  `gem install bundler`
 
-Installation and Setup
----------------
+## Installation and Setup
 - Download master ![branch](https://github.com/harssh/zen_search_test.git) and unzip.
 - Browse to extracted folder.
 - Copy database.yml.example to database.yml and please setup MySQL user and database name.
@@ -27,17 +27,26 @@ Installation and Setup
 - Precompile assets `RAILS_ENV=production rake assets:precompile`.
 - Execute server `rails s -e production` and access application at [http://localhost:3000](http://localhost:3000/).
 
-Issues
--------------
+## Testing
+- Travis Build can be seen at https://travis-ci.com/harssh/zen_search_test.
+- Setup db `RAILS_ENV=test rake db:setup`
+- To execute specs on local please use `bundle exec rspec -f d`
 
-Similar Projects
-----------------
+## Usage
+![Fields](fields.gif)
 
-Contributing
-------------
+- Visiting root path will lead you to users page and nav bar has links for organization and tickets.
+- First select box can be used to sect the column you would like to search.
+- Second drop box will give you predicate/conditions to apply.
+- Please enter required search value in Value text field.
+- To search blank/empty value please use predicate `is blank` and value as `true`
 
-Credits
--------
+## Design
+Application is designed using bootstrap 4 and material framwork for UI.
 
-License
--------
+## Code
+- Rubocop , rails best practices and bundler-audit with brakeman are used to detect code quality and security issues.
+- Rubycritic has been used to check code.
+![rubycritic](rubycritic.png)
+
+
