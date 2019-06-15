@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.com/harssh/zen_search.svg?token=BVW2o4hfR7sCCYShDufF&branch=master)](https://travis-ci.com/harssh/zen_search)
+[![Build Status](https://travis-ci.com/harssh/zen_search_test.svg?token=BVW2o4hfR7sCCYShDufF&branch=master)](https://travis-ci.com/harssh/zen_search_test)
  Zen Search
  ================
  Search application based on ruby on rails.
@@ -17,7 +17,7 @@ This application requires:
 - bundler -  `gem install bundler`
 
 ## Installation and Setup
-- Download master ![branch](https://github.com/harssh/zen_search.git) and unzip.
+- Download master ![branch](https://github.com/harssh/zen_search_test.git) and unzip.
 - Browse to extracted folder.
 - Copy database.yml.example to database.yml and please setup MySQL user and database name.
 - Use command `bundle install` to install gems from Gemfile.
@@ -28,7 +28,7 @@ This application requires:
 - Execute server `rails s -e production` and access application at [http://localhost:3000](http://localhost:3000/).
 
 ## Testing
-- Travis Build can be seen at https://travis-ci.com/harssh/zen_search.
+- Travis Build can be seen at https://travis-ci.com/harssh/zen_search_test.
 - Setup db `RAILS_ENV=test rake db:setup`
 - To execute specs on local please use `bundle exec rspec -f d`
 
