@@ -3,8 +3,8 @@
  Zen Search
  ================
  Search application based on ruby on rails.
-![Demonstration](Search Demo.gif)
-![Demonstration](Search demo for Blank value.gif)
+![Demonstration](SearchDemo.gif)
+![Demonstration](SearchdemoforBlankvalue.gif)
 When executing a search operation, where data exists, values from any related entities should be included in the results. The user should be able to search on any field and exact value matching is fine (e.g. “mar” won’t return “mary”). The user should also be able to search for empty values, e.g. where description is empty.
 
 
