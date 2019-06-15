@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-12">
+    <div class="table-responsive text-nowrap">
+      <table  class="table" >
+      <thead class="primary-color text-white">
+        <tr>
+          <% search.klass.column_names.each do |column|  %>
+            <th colspan="" rowspan="" headers=""> <%= column.capitalize.humanize %></th>
+          <% end  %>
+        </tr>
+      </thead>
+      <tbody class="table-striped">
+        <% objects.each do |object| %>
+          <tr>
+            <% object.attributes.each do |attr_name, attr_value| %>
+               <td> <%= attr_value.kind_of?(Array) ? attr_value.join(", ") : attr_value %> </td>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+    <%= will_paginate objects, list_classes: %w(pagination justify-content-end) %>
+  </div>
+</div>

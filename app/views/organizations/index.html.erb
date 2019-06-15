@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  <div class="row">
+    <%= render "shared/search_form", target: organizations_path, search: @search  %>
+  </div>
+  <br>
+  <hr>
+  <%= render "shared/data_table", objects: @organizations, search: @search %>
+</div>

@@ -1,0 +1,27 @@
+<%= search_form_for search, :url => { :action => "index" }, class: "form-inline" do |f| %>
+  <%= f.condition_fields do |c| %>
+    <div class="col">
+      <%= c.attribute_fields do |a| %>
+        <span class="field_select">
+          <%= a.attribute_select(:include_blank => " Select Field ") %>
+        </span>
+      <% end %>
+    </div>
+    <div class="col">
+      <span class="predicate_select">
+        <%= c.predicate_select only: [:eq, :not_eq, :blank], compounds: false%>
+      </span>
+    </div>
+    <div class="col">
+      <%= c.value_fields do |v| %>
+        <%= v.text_field :value, placeholder: "Value", id: "value" %>
+      <% end %>
+    </div>
+  <% end %>
+  <div class="col">
+    <%= f.submit "Search" , class: "btn btn-primary " %>
+  </div>
+  <div class="col">
+    <%= link_to "Reset", target, class: "btn btn-secondary", role: "button"  %>
+  </div>
+<% end %>

@@ -1,16 +1,10 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <h3>Users</h3>
-    <div class="column">
-      <table class="table">
-        <tbody>
-          <% @users.each do |user| %>
-            <tr>
-              <%= render user %>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
+
+        <%= render "shared/search_form", target: users_path, search: @search %>
+
   </div>
+  <br>
+  <hr>
+        <%= render "shared/data_table", objects: @users, search: @search %>
 </div>
